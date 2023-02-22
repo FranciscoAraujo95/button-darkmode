@@ -24,6 +24,12 @@
   border-radius: 60px;
   position: relative;
   cursor: pointer;
+
+  transition: border 0.5s;
+}
+
+.btn.active {
+  border: 5px solid lightgray;
 }
 
 .btn::before {
@@ -41,6 +47,7 @@
 }
 
 .btn.active::before {
+  background-color: lightgray;
   transition: 0.5s;
   left: 115px;
 }
