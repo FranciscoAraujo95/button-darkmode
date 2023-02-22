@@ -13,13 +13,15 @@
     </div>
 
     <script>
-      const btn = document.querySelector(".btn");
-      const container = document.querySelector(".container");
+      const btn = document.querySelector('.btn');
+      const container = document.querySelector('.container');
 
-      btn.onclick = function () {
-        this.classList.toggle("active");
-        container.classList.toggle("active");
-      };
+      function darkmode() {
+        this.classList.toggle('active');
+        container.classList.toggle('active');
+      }
+
+      btn.addEventListener('click', darkmode);
     </script>
   </body>
 </html>
